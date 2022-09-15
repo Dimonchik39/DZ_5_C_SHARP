@@ -32,9 +32,10 @@ double Difference(double[] array)
     for (int i = 0; i < array.Length; i++)
     {
         if (max < array[i]) max = array[i];   
-        if (min > array[i]) min = array[i];    
+        if (min > array[i]) min = array[i];   
     }
     diff = max - min;
+    diff = Math.Round(diff, 1);
     return diff;
 }
 
